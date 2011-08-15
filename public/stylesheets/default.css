@@ -1,0 +1,41 @@
+/* fonts */
+body {font-size:62.5%; background-color:#fff;  text-align:center;  }
+body, input, select, textarea, button {font-family:Arial;}
+
+
+/* cross-browser */
+* {padding:0;margin:0;}
+img {display:block;}
+input, select, textarea, label, button, b, i, u, strong, table {font-size:1.1em;}
+table {border-collapse:collapse;}
+td, th {}
+a img {border:0;}
+
+a {border:none;}
+form {display:block;padding:0;margin:0;border:0;}
+
+/* text */
+h1, h2, h3, h4, h5, h6, p, div.p, ul, ol {text-align:left;}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+ol, ul, p, div.p, label {font-size:1.1em;}
+
+h5 {}
+p {padding:0; font-size:1.1em;}
+
+/* element */
+u, .u {text-decoration:underline;}
+i, .i {font-style:italic;}
+b, .b {font-weight:bold;}
+strong, .strong {font-weight:bold;display:block;}
+.Clear {clear:both;display:block;height:0px;overflow:hidden;float:none;}
+
+
+
+/* list */
+ul ul, ol ol, ol ul, ul ol {font-size:1.1em;}
+ol {}
+ul {}
+li {}

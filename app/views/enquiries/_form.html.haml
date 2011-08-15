@@ -1,0 +1,20 @@
+= form_for @enquiry do |f|
+  -if @enquiry.errors.any?
+    - @enquiry.errors.each do |attr_name, message|
+      .error= "#{attr_name} #{message}"
+      
+  %p
+    = f.label :email, "Email: "
+    = f.text_field :email
+  %br
+  %p
+    = f.label :phone, "Phone number: "
+    = f.text_field :phone
+  %br
+  %p= f.label :content, "Enter your enquiry below:"
+
+  = f.text_area :content, {:class => 'text-area'}
+  
+  .line
+  %p= f.submit "Submit enquiry", {:type => 'submit', :class => 'submit'}
+

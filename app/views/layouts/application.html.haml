@@ -1,0 +1,50 @@
+!!!
+%html
+  %head
+    %title= title
+
+    %meta{ :charset => "UTF-8" }
+    %meta{ :content => "text/html; charset=UTF-8", :"http-equiv" => "Content-Type" }
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=7" }
+
+    %meta{ :name => "title", :content => title }
+    %meta{ :name => "DC.Title", :content => title }
+    
+    %meta{ :name => "description", :content => "FRB! Project - Save Sight Institute" }
+    %meta{ :name => "DC.Description", :content => "FRB! Project - Save Sight Institute" }
+
+    %meta{ :name => "keywords", :content => "up,to,8,keywords,come,here" }
+    
+    = stylesheet_link_tag "screen.css"
+    = stylesheet_link_tag "graphs.css"
+    
+    /[if IE]
+      = stylesheet_link_tag "screen_ie.css"
+    / [if IE 6]
+      = stylesheet_link_tag "screen-ie6.css"
+      
+  %body
+    #page.Page
+      / Start Header
+      .Header
+        %h1 Wingmaze Education
+        /%h2 Unleash Your Ambition!
+        =link_to(image_tag('logo.png', :alt => 'Wingmaze Education', :border => 0, :size => '178x111', :id => 'logo'), 'http://wingmazeeducation.com')
+      .Navigation
+        .Navi_Container
+          %ul.Tab_menu
+            = render :partial => 'layouts/tabs'
+      .Content_Container
+        - if defined?(@menu)
+          #menu
+            = render :partial => "/layouts/#{@menu}"
+          .Contents
+            = "<p class='error'>#{flash[:error]}</p>" if flash[:error]
+            = "<p class='notice'>#{flash[:notice]}</p>" if flash[:notice]
+            = yield
+        - else
+          .Contents
+            = "<p class='error'>#{flash[:error]}</p>" if flash[:error]
+            = "<p class='notice'>#{flash[:notice]}</p>" if flash[:notice]
+            = yield
+      /= render :partial => 'layouts/footer'

@@ -1,0 +1,21 @@
+%h1 Listing enquiries
+
+%table
+  %tr
+    %th Email
+    %th Content
+    %th
+    %th
+    %th
+
+  - @enquiries.each do |enquiry|
+    %tr
+      %td= enquiry.email
+      %td= enquiry.content
+      %td= link_to 'Show', enquiry
+      %td= link_to 'Edit', edit_enquiry_path(enquiry)
+      %td= link_to 'Destroy', enquiry, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Enquiry', new_enquiry_path

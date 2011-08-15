@@ -1,0 +1,2865 @@
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:00:26 +1000 2011
+
+Mysql2::Error (Unknown database 'wingmaze_development'):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (55.8ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (150.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateEnquiries (20110802012127)
+  [1m[35mSQL (178.3ms)[0m  CREATE TABLE `enquiries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110802012127')[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `enquiries`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `enquiries`
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:01:14 +1000 2011
+
+SyntaxError (/Users/ysat7673/git_repos/wingmaze/app/helpers/application_helper.rb:4: syntax error, unexpected '\n'):
+  app/controllers/application_controller.rb:1
+  app/controllers/enquiries_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:01:16 +1000 2011
+
+SyntaxError (/Users/ysat7673/git_repos/wingmaze/app/helpers/application_helper.rb:4: syntax error, unexpected '\n'):
+  app/controllers/application_controller.rb:1
+  app/controllers/enquiries_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:03:02 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+ERROR: compiling _app_views_layouts__tabs_html_haml__699032626_2173213000_977310 RAISED compile error
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:4: syntax error, unexpected ')', expecting '}'
+...= "Location" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _...
+                              ^
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:5: syntax error, unexpected ')', expecting '}'
+...== "Careers" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _...
+                              ^
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:6: syntax error, unexpected ')', expecting '}'
+...== "Contact" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _...
+                              ^
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:7: unterminated string meets end of file
+Function body:           def _app_views_layouts__tabs_html_haml__699032626_2173213000_977310(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/_tabs";_old_output_buffer = @output_buffer;tabs = local_assigns[:tabs];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :encoding=>nil, :preserve=>["textarea", "pre", "code"], :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :format=>:html5, :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<li#{_hamlout.attributes({}, nil, :class => (@active_tab == "About Us" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "About Us", "http://wingmazeeducation.com/about/index.html"
+));}</li>\n<li#{_hamlout.attributes({}, nil, :class => (@active_tab == "Our Methods" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Our Methods", "http://wingmazeeducation.com/methods/index.html"
+));}</li>\n<li#{_hamlout.attributes({}, nil, :class => (@active_tab == "Prices" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Prices", "http://wingmazeeducation.com/prices/index.html"
+));}</li>\n<li#{_hamlout.attributes({}, nil, :class => @active_tab == "Location" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Location", "http://wingmazeeducation.com/location/index.html"
+));}</li>\n<li#{_hamlout.attributes({}, nil, :class => @active_tab == "Careers" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Careers", "http://wingmazeeducation.com/careers/index.html"
+));}</li>\n<li#{_hamlout.attributes({}, nil, :class => @active_tab == "Contact" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Contact", "http://wingmazeeducation.com/contact/index.html"
+));}</li>\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:7:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:333:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:378:in `_render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:22:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.1.2/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/Library/Ruby/Gems/1.8/gems/haml-3.1.2/lib/haml/helpers.rb:90:in `non_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.1.2/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/application.html.haml:36:in `_app_views_layouts_application_html_haml__286404705_2173835680_0'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:135:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.1.2/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ysat7673/git_repos/wingmaze/app/controllers/enquiries_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__718587544__process_action__199225275__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/rack/debugger.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/handler/mongrel.rb:67:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (24.1ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (compile error
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:4: syntax error, unexpected ')', expecting '}'
+...= "Location" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _...
+                              ^
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:5: syntax error, unexpected ')', expecting '}'
+...== "Careers" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _...
+                              ^
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:6: syntax error, unexpected ')', expecting '}'
+...== "Contact" ? 'active' : ''))}>#{_hamlout.adjust_tabs(1); _...
+                              ^
+/Users/ysat7673/git_repos/wingmaze/app/views/layouts/_tabs.html.haml:7: unterminated string meets end of file):
+    1: %li{:class => (@active_tab == "About Us" ? 'active' : '')}= link_to "About Us", "http://wingmazeeducation.com/about/index.html"
+    2: %li{:class => (@active_tab == "Our Methods" ? 'active' : '')}= link_to "Our Methods", "http://wingmazeeducation.com/methods/index.html"
+    3: %li{:class => (@active_tab == "Prices" ? 'active' : '')}= link_to "Prices", "http://wingmazeeducation.com/prices/index.html"
+    4: %li{:class => @active_tab == "Location" ? 'active' : '')}= link_to "Location", "http://wingmazeeducation.com/location/index.html"
+    5: %li{:class => @active_tab == "Careers" ? 'active' : '')}= link_to "Careers", "http://wingmazeeducation.com/careers/index.html"
+    6: %li{:class => @active_tab == "Contact" ? 'active' : '')}= link_to "Contact", "http://wingmazeeducation.com/contact/index.html"
+  app/views/layouts/_tabs.html.haml:7:in `compile'
+  app/views/layouts/application.html.haml:36:in `_app_views_layouts_application_html_haml__286404705_2173835680_0'
+  app/controllers/enquiries_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (62.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (68.4ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:03:51 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.4ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:03:51 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:04:22 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.4ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.1ms)
+Rendered enquiries/index.html.haml within layouts/application (81.1ms)
+Completed 200 OK in 91ms (Views: 86.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:04:22 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:04:22 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.1ms)
+Rendered enquiries/index.html.haml within layouts/application (22.5ms)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:04:22 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:04:50 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.5ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (83.0ms)
+Completed 200 OK in 93ms (Views: 87.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:04:50 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/stylesheets/library/default.css" for 127.0.0.1 at Tue Aug 02 13:04:50 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/library/default.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:04:51 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:05:27 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.2ms)
+Rendered enquiries/index.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:05:27 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/stylesheets/library/default.css" for 127.0.0.1 at Tue Aug 02 13:05:27 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/library/default.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (62.6ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:05:27 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:05:28 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.4ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:05:28 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/stylesheets/library/default.css" for 127.0.0.1 at Tue Aug 02 13:05:28 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/library/default.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:05:28 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:06:04 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.3ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (79.5ms)
+Completed 200 OK in 89ms (Views: 84.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:06:04 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:06:04 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:08:28 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 32ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:08:28 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Aug 02 13:08:28 +1000 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:08:28 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:08:29 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.3ms)
+Rendered enquiries/index.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:08:29 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Aug 02 13:08:29 +1000 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:08:29 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:08:51 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.1ms)
+Rendered enquiries/index.html.haml within layouts/application (81.5ms)
+Completed 200 OK in 91ms (Views: 86.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:08:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:08:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:09:41 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.3ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:09:41 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:09:41 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:09:53 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (81.4ms)
+Completed 200 OK in 91ms (Views: 86.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:09:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/image/header_banner.jpg" for 127.0.0.1 at Tue Aug 02 13:09:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/image/header_banner.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:10:48 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.3ms)
+Rendered enquiries/index.html.haml within layouts/application (25.1ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:10:48 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/stylesheets/bg.png" for 127.0.0.1 at Tue Aug 02 13:10:48 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/bg.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:10:49 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.1ms)
+Rendered enquiries/index.html.haml within layouts/application (23.3ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:10:49 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/stylesheets/bg.png" for 127.0.0.1 at Tue Aug 02 13:10:49 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/bg.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/stylesheets/bg.png" for 127.0.0.1 at Tue Aug 02 13:11:02 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/bg.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:11:20 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.2ms)
+Rendered enquiries/index.html.haml within layouts/application (83.2ms)
+Completed 200 OK in 92ms (Views: 87.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:11:20 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:12:00 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:12:00 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:14:03 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.3ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.4ms)
+Rendered enquiries/index.html.haml within layouts/application (24.4ms)
+Completed 200 OK in 95ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:14:03 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:16:45 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (68.1ms)
+Rendered enquiries/index.html.haml within layouts/application (87.7ms)
+Completed 200 OK in 96ms (Views: 92.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:16:46 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:16:47 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.7ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 33ms (Views: 27.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:16:47 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:17:59 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (82.5ms)
+Completed 200 OK in 92ms (Views: 87.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:17:59 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:18:13 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:18:13 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:20:43 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.4ms)
+Rendered enquiries/index.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 93ms (Views: 88.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:20:43 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:21:22 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.1ms)
+Rendered enquiries/index.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 32ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:21:22 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:21:24 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:21:24 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:21:52 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.3ms)
+Rendered enquiries/index.html.haml within layouts/application (82.9ms)
+Completed 200 OK in 94ms (Views: 88.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:21:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:21:53 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (23.9ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:21:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:26:09 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.3ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 92ms (Views: 87.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:26:09 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:27:12 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (23.8ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:27:12 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (73.0ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:27:14 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.3ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.2ms)
+Rendered enquiries/index.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:27:14 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:27:30 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.4ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.4ms)
+Rendered enquiries/index.html.haml within layouts/application (82.9ms)
+Completed 200 OK in 93ms (Views: 88.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:27:30 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:28:52 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:28:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:28:53 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.3ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (81.3ms)
+Completed 200 OK in 91ms (Views: 86.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:28:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:28:54 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (23.8ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:28:54 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:28:56 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (5.0ms)
+Rendered enquiries/index.html.haml within layouts/application (25.1ms)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:28:56 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:30:11 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.3ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (82.4ms)
+Completed 200 OK in 92ms (Views: 87.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:30:11 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:30:16 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.4ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.5ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:30:16 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:30:41 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.4ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (85.5ms)
+Completed 200 OK in 96ms (Views: 90.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:30:41 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:30:58 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:30:58 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:33:13 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:33:14 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:33:36 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.2ms)
+Rendered enquiries/index.html.haml within layouts/application (83.7ms)
+Completed 200 OK in 92ms (Views: 88.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:33:36 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:33:44 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.4ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 33ms (Views: 27.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:33:44 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:34:00 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (84.3ms)
+Completed 200 OK in 93ms (Views: 88.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:34:01 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:34:24 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:34:24 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:34:34 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.1ms)
+Rendered enquiries/index.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 32ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:34:34 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:48:16 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.4ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (61.9ms)
+Rendered enquiries/index.html.haml within layouts/application (80.5ms)
+Completed 200 OK in 90ms (Views: 85.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:48:16 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:48:18 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.4ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.6ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:48:18 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:48:43 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (82.2ms)
+Completed 200 OK in 92ms (Views: 87.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:48:43 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:48:47 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:48:47 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:49:05 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.5ms)
+Rendered enquiries/index.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 96ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:49:05 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:51:39 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.4ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.6ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:51:39 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:52:00 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.2ms)
+Rendered enquiries/index.html.haml within layouts/application (24.2ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:52:00 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:53:15 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (82.7ms)
+Completed 200 OK in 92ms (Views: 88.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:53:15 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:53:43 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:53:44 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:53:45 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 93ms (Views: 88.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:53:45 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:54:00 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.5ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:54:00 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:54:29 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.2ms)
+Rendered enquiries/index.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:54:29 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:54:35 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.4ms)
+Rendered enquiries/index.html.haml within layouts/application (83.1ms)
+Completed 200 OK in 92ms (Views: 87.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:54:36 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:55:24 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.0ms)
+Rendered enquiries/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:55:24 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:55:34 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (82.4ms)
+Completed 200 OK in 91ms (Views: 86.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:55:34 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:55:41 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.5ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:55:41 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:56:11 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:56:11 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:58:37 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.2ms)
+Rendered enquiries/index.html.haml within layouts/application (81.7ms)
+Completed 200 OK in 91ms (Views: 86.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:58:37 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:58:57 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.4ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered enquiries/index.html.haml within layouts/application (24.4ms)
+Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:58:57 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 13:59:45 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/index.html.haml within layouts/application (83.9ms)
+Completed 200 OK in 93ms (Views: 88.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:59:46 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 13:59:48 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (55.8ms)
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/new.html.haml within layouts/application (139.9ms)
+Completed 200 OK in 150ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 13:59:48 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 14:00:08 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries`
+Rendered layouts/_tabs.html.haml (4.7ms)
+Rendered enquiries/index.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 34ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:00:08 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+
+
+Started GET "/enquiries" for 127.0.0.1 at Tue Aug 02 14:05:44 +1000 2011
+  Processing by EnquiriesController#index as HTML
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries`[0m
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered enquiries/index.html.haml within layouts/application (83.7ms)
+Completed 200 OK in 93ms (Views: 89.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:05:45 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:05:52 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (11.7ms)
+Rendered layouts/_tabs.html.haml (71.7ms)
+Rendered enquiries/new.html.haml within layouts/application (101.2ms)
+Completed 200 OK in 111ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:05:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:11:10 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (10.8ms)
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered enquiries/new.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 43ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:11:10 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:13:19 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (0.9ms)
+Rendered enquiries/new.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    7:   = f.text_field :email
+    8:   
+    9:   %p= f.label :content, "Enter your enquiry below:"
+    10:     = f.text_area :content
+    11:   .actions
+    12:     = f.submit 'Save'
+  app/views/enquiries/_form.html.haml:10
+  app/views/enquiries/new.html.haml:5:in `_app_views_enquiries_new_html_haml__539551343_2177709260_0'
+  app/controllers/enquiries_controller.rb:29:in `new'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:13:28 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (8.6ms)
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered enquiries/new.html.haml within layouts/application (30.5ms)
+Completed 200 OK in 40ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:13:28 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:13:51 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (9.5ms)
+Rendered layouts/_tabs.html.haml (5.0ms)
+Rendered enquiries/new.html.haml within layouts/application (31.6ms)
+Completed 200 OK in 41ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:13:51 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:14:04 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (72.7ms)
+Rendered layouts/_tabs.html.haml (5.0ms)
+Rendered enquiries/new.html.haml within layouts/application (95.7ms)
+Completed 200 OK in 106ms (Views: 100.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:14:04 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:14:36 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (8.8ms)
+Rendered layouts/_tabs.html.haml (5.1ms)
+Rendered enquiries/new.html.haml within layouts/application (92.9ms)
+Completed 200 OK in 103ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:14:36 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:15:10 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (8.6ms)
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/new.html.haml within layouts/application (31.2ms)
+Completed 200 OK in 41ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:15:10 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:15:58 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (18.1ms)
+Rendered enquiries/new.html.haml within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 93ms
+
+ActionView::Template::Error (undefined local variable or method `practices_path' for #<#<Class:0x10395bf88>:0x10394c3f8>):
+    12:   = f.text_area :content
+    13:   
+    14:   .line
+    15:   %p.list= link_to "Back to List", practices_path
+    16:   %p= f.submit "Create Practice", {:type => 'submit', :class => 'submit'}
+    17:   .actions
+    18:     = f.submit 'Save'
+  app/views/enquiries/_form.html.haml:15:in `_app_views_enquiries__form_html_haml__367103279_2177458360_908350'
+  app/views/enquiries/_form.html.haml:1:in `_app_views_enquiries__form_html_haml__367103279_2177458360_908350'
+  app/views/enquiries/new.html.haml:5:in `_app_views_enquiries_new_html_haml__539551343_2177519680_0'
+  app/controllers/enquiries_controller.rb:29:in `new'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:16:31 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (64.5ms)
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/new.html.haml within layouts/application (86.8ms)
+Completed 200 OK in 97ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:16:32 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:21:29 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (8.9ms)
+Rendered layouts/_tabs.html.haml (67.6ms)
+Rendered enquiries/new.html.haml within layouts/application (93.5ms)
+Completed 200 OK in 104ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:21:30 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:23:09 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (8.3ms)
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/new.html.haml within layouts/application (31.1ms)
+Completed 200 OK in 46ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:23:09 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:23:23 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (9.0ms)
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered enquiries/new.html.haml within layouts/application (90.8ms)
+Completed 200 OK in 101ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:23:23 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+  [1m[36mSQL (9.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateEnquiries (20110802012127)
+  [1m[35mSQL (24.1ms)[0m  DROP TABLE `enquiries`
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20110802012127'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateEnquiries (20110802012127)
+  [1m[35mSQL (91.2ms)[0m  CREATE TABLE `enquiries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `phone` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110802012127')[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `enquiries`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW KEYS FROM `enquiries`
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:26:33 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (10.3ms)
+Rendered layouts/_tabs.html.haml (5.2ms)
+Rendered enquiries/new.html.haml within layouts/application (96.6ms)
+Completed 200 OK in 107ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:26:33 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:27:18 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (10.4ms)
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered enquiries/new.html.haml within layouts/application (32.1ms)
+Completed 200 OK in 43ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:27:18 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:27:35 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (10.2ms)
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/new.html.haml within layouts/application (33.0ms)
+Completed 200 OK in 43ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:27:35 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:29:23 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (69.1ms)
+Rendered layouts/_tabs.html.haml (5.0ms)
+Rendered enquiries/new.html.haml within layouts/application (91.4ms)
+Completed 200 OK in 103ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:29:23 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Tue Aug 02 14:29:43 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"jeFiO6fLRjvyJ13y5RaGQQcFHJwvnqemNXA+nTzeeUY=", "utf8"=>"✓", "enquiry"=>{"phone"=>"0424295240", "content"=>"Testing", "email"=>"julines@gmail.com"}}
+  [1m[35mSQL (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.1ms)[0m  describe `enquiries`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `enquiries` (`created_at`, `updated_at`, `email`, `phone`, `content`) VALUES ('2011-08-02 04:29:43', '2011-08-02 04:29:43', 'julines@gmail.com', '0424295240', 'Testing')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/enquiries/1
+Completed 302 Found in 97ms
+
+
+Started GET "/enquiries/1" for 127.0.0.1 at Tue Aug 02 14:29:43 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/show.html.haml within layouts/application (92.6ms)
+Completed 200 OK in 104ms (Views: 97.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:29:43 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/enquiries/1/edit" for 127.0.0.1 at Tue Aug 02 14:29:52 +1000 2011
+  Processing by EnquiriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEnquiry Load (0.7ms)[0m  SELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 1 LIMIT 1
+Rendered enquiries/_form.html.haml (18.8ms)
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered enquiries/edit.html.haml within layouts/application (40.5ms)
+Completed 200 OK in 53ms (Views: 45.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:29:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/enquiries/1" for 127.0.0.1 at Tue Aug 02 14:29:57 +1000 2011
+  Processing by EnquiriesController#update as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"jeFiO6fLRjvyJ13y5RaGQQcFHJwvnqemNXA+nTzeeUY=", "utf8"=>"✓", "enquiry"=>{"phone"=>"0424295240", "content"=>"Testing", "email"=>""}, "id"=>"1"}
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+Rendered enquiries/_form.html.haml (7.2ms)
+Rendered layouts/_tabs.html.haml (4.6ms)
+Rendered enquiries/edit.html.haml within layouts/application (28.7ms)
+Completed 200 OK in 47ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:29:57 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:44:47 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (70.9ms)
+Rendered layouts/_tabs.html.haml (5.1ms)
+Rendered enquiries/new.html.haml within layouts/application (93.9ms)
+Completed 200 OK in 105ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:44:47 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:46:54 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (11.9ms)
+Rendered layouts/_tabs.html.haml (90.8ms)
+Rendered enquiries/new.html.haml within layouts/application (122.3ms)
+Completed 200 OK in 134ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:46:55 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Tue Aug 02 14:47:06 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"jeFiO6fLRjvyJ13y5RaGQQcFHJwvnqemNXA+nTzeeUY=", "utf8"=>"✓", "enquiry"=>{"phone"=>"", "content"=>"testing", "email"=>"julines.liong@sydney.edu.au"}}
+  [1m[36mSQL (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `enquiries`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `enquiries` (`email`, `updated_at`, `phone`, `content`, `created_at`) VALUES ('julines.liong@sydney.edu.au', '2011-08-02 04:47:06', '', 'testing', '2011-08-02 04:47:06')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+Rendered notifications/enquiry.text.haml (2.9ms)
+
+Sent mail to julines.liong@sydney.edu.au (319ms)
+Date: Tue, 02 Aug 2011 14:47:06 +1000
+From: contact@wingmazeeducation.com
+To: julines.liong@sydney.edu.au
+Message-ID: <4e37814a6ce45_3c0183565cd882bc@int-45.mpg.usyd.edu.au.mail>
+Subject: [Wingmaze Education]  Thank you for your enquiry
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Madam,
+<p>Thank you for your query regarding Wingmaze Education.  This is an automated reply from Wingmaze Education.</p>
+<p>Please allow 1-2 working days for a reply to your query.</p>
+<p>Information about our education services may be found at: &lt;a href=&quot;http://www.wingmazeeduction.com&quot;&gt;http://www.wingmazeeduction.com&lt;/a&gt;</p>
+Kind regards,
+Wingmaze Education
+Wingmaze Education
+2/2 McFarlane Street
+Merrylands
+NSW 2160
+E-mail &lt;a href=&quot;mailto:contact@wingmazeeducation.com&quot;&gt;contact@wingmazeeducation.com&lt;/a&gt;
+Redirected to http://localhost:3000/enquiries/2
+Completed 302 Found in 545ms
+
+
+Started GET "/enquiries/2" for 127.0.0.1 at Tue Aug 02 14:47:06 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 2 LIMIT 1
+Rendered layouts/_tabs.html.haml (5.0ms)
+Rendered enquiries/show.html.haml within layouts/application (39.8ms)
+Completed 200 OK in 51ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:47:06 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:49:09 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (10.4ms)
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/new.html.haml within layouts/application (112.0ms)
+Completed 200 OK in 122ms (Views: 116.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:49:09 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Tue Aug 02 14:49:17 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"jeFiO6fLRjvyJ13y5RaGQQcFHJwvnqemNXA+nTzeeUY=", "utf8"=>"✓", "enquiry"=>{"phone"=>"", "content"=>"testing enquiry", "email"=>"julines.liong@sydney.edu.au"}}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  describe `enquiries`
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `enquiries` (`content`, `created_at`, `email`, `updated_at`, `phone`) VALUES ('testing enquiry', '2011-08-02 04:49:17', 'julines.liong@sydney.edu.au', '2011-08-02 04:49:17', '')[0m
+  [1m[35mSQL (18.5ms)[0m  COMMIT
+Rendered notifications/enquiry.text.haml (2.8ms)
+
+Sent mail to julines.liong@sydney.edu.au (236ms)
+Date: Tue, 02 Aug 2011 14:49:17 +1000
+From: contact@wingmazeeducation.com
+To: julines.liong@sydney.edu.au
+Message-ID: <4e3781cd1911c_3c018353d74c833e@int-45.mpg.usyd.edu.au.mail>
+Subject: [Wingmaze Education]  Thank you for your enquiry
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Madam,
+Thank you for your query regarding Wingmaze Education.  This is an automated reply from Wingmaze Education.
+Please allow 1-2 working days for a reply to your query.
+Information about our education services may be found at:
+<a href="http://www.wingmazeeduction.com">http://www.wingmazeeduction.com</a>
+Kind regards,
+Wingmaze Education
+Wingmaze Education
+2/2 McFarlane Street
+Merrylands
+NSW 2160
+E-mail
+<a href="mailto:contact@wingmazeeducation.com">contact@wingmazeeducation.com</a>
+Redirected to http://localhost:3000/enquiries/3
+Completed 302 Found in 292ms
+
+
+Started GET "/enquiries/3" for 127.0.0.1 at Tue Aug 02 14:49:17 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 3 LIMIT 1[0m
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered enquiries/show.html.haml within layouts/application (112.8ms)
+Completed 200 OK in 128ms (Views: 121.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:49:17 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:50:23 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (11.3ms)
+Rendered layouts/_tabs.html.haml (88.5ms)
+Rendered enquiries/new.html.haml within layouts/application (123.0ms)
+Completed 200 OK in 134ms (Views: 127.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:50:23 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Tue Aug 02 14:50:29 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"jeFiO6fLRjvyJ13y5RaGQQcFHJwvnqemNXA+nTzeeUY=", "utf8"=>"✓", "enquiry"=>{"phone"=>"", "content"=>"test", "email"=>"julines.liong@sydney.edu.au"}}
+  [1m[35mSQL (0.8ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mdescribe `enquiries`[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `enquiries` (`phone`, `email`, `updated_at`, `content`, `created_at`) VALUES ('', 'julines.liong@sydney.edu.au', '2011-08-02 04:50:29', 'test', '2011-08-02 04:50:29')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+Rendered notifications/enquiry.text.haml (1.9ms)
+
+Sent mail to julines.liong@sydney.edu.au (325ms)
+Date: Tue, 02 Aug 2011 14:50:29 +1000
+From: contact@wingmazeeducation.com
+To: julines.liong@sydney.edu.au
+Message-ID: <4e378215569b4_3c018356fc748422@int-45.mpg.usyd.edu.au.mail>
+Subject: [Wingmaze Education]  Thank you for your enquiry
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Madam,
+Thank you for your query regarding Wingmaze Education.  This is an automated reply from Wingmaze Education.
+Please allow 1-2 working days for a reply to your query.
+Information about our education services may be found at: http://www.wingmazeeduction.com
+Kind regards,
+Wingmaze Education
+Wingmaze Education
+2/2 McFarlane Street
+Merrylands
+NSW 2160
+E-mail: contact@wingmazeeducation.com
+Redirected to http://localhost:3000/enquiries/4
+Completed 302 Found in 363ms
+
+
+Started GET "/enquiries/4" for 127.0.0.1 at Tue Aug 02 14:50:29 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 4 LIMIT 1
+Rendered layouts/_tabs.html.haml (4.7ms)
+Rendered enquiries/show.html.haml within layouts/application (130.0ms)
+Completed 200 OK in 151ms (Views: 134.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:50:29 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/enquiries/4/edit" for 127.0.0.1 at Tue Aug 02 14:51:24 +1000 2011
+  Processing by EnquiriesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 4 LIMIT 1[0m
+Rendered enquiries/_form.html.haml (30.0ms)
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered enquiries/edit.html.haml within layouts/application (52.9ms)
+Completed 200 OK in 65ms (Views: 57.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:51:24 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/4/edit" for 127.0.0.1 at Tue Aug 02 14:51:42 +1000 2011
+  Processing by EnquiriesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mEnquiry Load (0.5ms)[0m  SELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 4 LIMIT 1
+Rendered enquiries/_form.html.haml (12.0ms)
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered enquiries/edit.html.haml within layouts/application (33.9ms)
+Completed 200 OK in 126ms (Views: 118.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:51:42 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 14:56:25 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (19.4ms)
+Rendered layouts/_tabs.html.haml (9.5ms)
+Rendered enquiries/new.html.haml within layouts/application (151.3ms)
+Completed 200 OK in 163ms (Views: 156.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:56:25 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Tue Aug 02 14:56:29 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"jeFiO6fLRjvyJ13y5RaGQQcFHJwvnqemNXA+nTzeeUY=", "utf8"=>"✓", "enquiry"=>{"phone"=>"", "content"=>"test", "email"=>"julines.liong@sydney.edu.au"}}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  describe `enquiries`
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `enquiries` (`email`, `phone`, `created_at`, `updated_at`, `content`) VALUES ('julines.liong@sydney.edu.au', '', '2011-08-02 04:56:29', '2011-08-02 04:56:29', 'test')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+Rendered notifications/enquiry.text.haml (2.0ms)
+
+Sent mail to julines.liong@sydney.edu.au (153ms)
+Date: Tue, 02 Aug 2011 14:56:29 +1000
+From: contact@wingmazeeducation.com
+To: julines.liong@sydney.edu.au
+Message-ID: <4e37837dd4a74_3c018353fefc85f4@int-45.mpg.usyd.edu.au.mail>
+Subject: [Wingmaze Education]  Thank you for your enquiry
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Madam,
+Thank you for your query regarding Wingmaze Education.  This is an automated reply from Wingmaze Education.
+Please allow 1-2 working days for a reply to your query.
+Information about our education services may be found at: http://www.wingmazeeduction.com
+Kind regards,
+Wingmaze Education
+Wingmaze Education
+2/2 McFarlane Street
+Merrylands
+NSW 2160
+E-mail: contact@wingmazeeducation.com
+Redirected to http://localhost:3000/enquiries/5
+Completed 302 Found in 191ms
+
+
+Started GET "/enquiries/5" for 127.0.0.1 at Tue Aug 02 14:56:30 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEnquiry Load (0.2ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 5 LIMIT 1[0m
+Rendered layouts/_tabs.html.haml (5.0ms)
+Rendered enquiries/show.html.haml within layouts/application (129.7ms)
+Completed 200 OK in 141ms (Views: 134.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 14:56:30 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/enquiries/5" for 127.0.0.1 at Tue Aug 02 15:03:55 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mEnquiry Load (0.2ms)[0m  SELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 5 LIMIT 1
+Rendered layouts/_tabs.html.haml (6.1ms)
+Rendered enquiries/show.html.haml within layouts/application (47.6ms)
+Completed 200 OK in 59ms (Views: 52.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:03:55 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:04:24 +1000 2011
+
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:04:26 +1000 2011
+
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:06:07 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h2 and nested within it.):
+    6: 
+    7: %h2 Tutor Quality
+    8: 
+    9:     All tutors achieved an ATAR of over 99
+    10:     All have PhDs or are becoming doctors
+    11:     All tutors are gifted teachers
+    12: 
+  app/views/welcome/index.html.haml:9
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:08:13 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.):
+    22:   %h3 Year 7-10 (Mathematics, English, Science)
+    23: 
+    24:   %h3 Year 11 and HSC
+    25:     \- Mathematics (General, 2U, 3U, 4U)
+    26:     \- Science (Physics, Chemistry, Biology)
+    27:     \- English (Std, Adv)
+    28: 
+  app/views/welcome/index.html.haml:25
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:08:47 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.):
+    22:   %h3 Year 7-10 (Mathematics, English, Science)
+    23: 
+    24:   %h3 Year 11 and HSC
+    25:     Mathematics (General, 2U, 3U, 4U)
+    26:     %br
+    27:     Science (Physics, Chemistry, Biology)
+    28:     %br
+  app/views/welcome/index.html.haml:25
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:08:48 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.):
+    22:   %h3 Year 7-10 (Mathematics, English, Science)
+    23: 
+    24:   %h3 Year 11 and HSC
+    25:     Mathematics (General, 2U, 3U, 4U)
+    26:     %br
+    27:     Science (Physics, Chemistry, Biology)
+    28:     %br
+  app/views/welcome/index.html.haml:25
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:08:59 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    50: %h2 Free Trial Lesson
+    51: 
+    52: %p A free trial lesson is available
+    53:     To book, call 0413 933 645, or
+    54:     E-mail contact@wingmazeeducation.com
+    55: 
+    56:  
+  app/views/welcome/index.html.haml:53
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:09:16 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered welcome/index.html.haml within layouts/application (24.6ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:09:16 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:11:59 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (5.3ms)
+Rendered welcome/index.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:11:59 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:12:55 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (4.7ms)
+Rendered welcome/index.html.haml within layouts/application (25.1ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:12:55 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:12:57 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (84.0ms)
+Rendered welcome/index.html.haml within layouts/application (104.4ms)
+Completed 200 OK in 110ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:12:57 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:13:11 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (4.6ms)
+Rendered welcome/index.html.haml within layouts/application (26.9ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:13:11 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:13:55 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (4.9ms)
+Rendered welcome/index.html.haml within layouts/application (105.6ms)
+Completed 200 OK in 111ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:13:55 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:13:56 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (4.6ms)
+Rendered welcome/index.html.haml within layouts/application (24.7ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:13:57 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:21:29 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (4.8ms)
+Rendered welcome/index.html.haml within layouts/application (104.5ms)
+Completed 200 OK in 109ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:21:29 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/ysat7673/git_repos/wingmaze/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 15:24:34 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (3.9ms)
+Rendered welcome/index.html.haml within layouts/application (19.2ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 15:24:34 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/julines/freelance/wingmaze/config/environment.rb:5)
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (120.2ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (291.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateEnquiries (20110802012127)
+  [1m[35mSQL (89.6ms)[0m  CREATE TABLE `enquiries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `phone` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110802012127')[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.4ms)[0m  [1mdescribe `enquiries`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW KEYS FROM `enquiries`
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/julines/freelance/wingmaze/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/julines/freelance/wingmaze/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 17:03:42 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (7.1ms)
+Rendered welcome/index.html.haml within layouts/application (152.5ms)
+Completed 200 OK in 162ms (Views: 160.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:03:43 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 17:04:06 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (24.3ms)
+Rendered layouts/_tabs.html.haml (120.9ms)
+Rendered enquiries/new.html.haml within layouts/application (175.2ms)
+Completed 200 OK in 192ms (Views: 181.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:04:06 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.6ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Tue Aug 02 17:04:23 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"mwtDXQYpZggPnB0QmEK+vFhBxqi3uLgW2GPPeMDLDEk=", "utf8"=>"\342\234\223", "enquiry"=>{"phone"=>"", "content"=>"testing", "email"=>"julines.liong@sydney.edu.au"}}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (6.3ms)[0m  [1mdescribe `enquiries`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `enquiries` (`email`, `phone`, `content`, `updated_at`, `created_at`) VALUES ('julines.liong@sydney.edu.au', '', 'testing', '2011-08-02 07:04:23', '2011-08-02 07:04:23')
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+Rendered notifications/enquiry.text.haml (2.6ms)
+
+Sent mail to julines.liong@sydney.edu.au (30408ms)
+Date: Tue, 02 Aug 2011 17:04:23 +1000
+From: contact@wingmazeeducation.com
+To: julines.liong@sydney.edu.au
+Message-ID: <4e37a177e115b_2f383aa6170867f7@Macintosh-2.local.mail>
+Subject: [Wingmaze Education]  Thank you for your enquiry
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Madam,
+Thank you for your query regarding Wingmaze Education.  This is an automated reply from Wingmaze Education.
+Please allow 1-2 working days for a reply to your query.
+Information about our education services may be found at: http://www.wingmazeeduction.com
+Kind regards,
+Wingmaze Education
+Wingmaze Education
+2/2 McFarlane Street
+Merrylands
+NSW 2160
+E-mail: contact@wingmazeeducation.com
+Redirected to http://localhost:3000/enquiries/1
+Completed 302 Found in 30655ms
+
+
+Started GET "/enquiries/1" for 127.0.0.1 at Tue Aug 02 17:04:54 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEnquiry Load (0.6ms)[0m  SELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 1 LIMIT 1
+Rendered layouts/_tabs.html.haml (6.6ms)
+Rendered enquiries/show.html.haml within layouts/application (155.4ms)
+Completed 200 OK in 178ms (Views: 163.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:04:54 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 17:09:55 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (7.0ms)
+Rendered welcome/index.html.haml within layouts/application (46.1ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:09:55 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 17:25:00 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (13.2ms)
+Rendered layouts/_tabs.html.haml (6.7ms)
+Rendered enquiries/new.html.haml within layouts/application (43.0ms)
+Completed 200 OK in 165ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:25:00 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Tue Aug 02 17:25:18 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"mwtDXQYpZggPnB0QmEK+vFhBxqi3uLgW2GPPeMDLDEk=", "utf8"=>"\342\234\223", "enquiry"=>{"phone"=>"", "content"=>"ffdsa", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+Rendered enquiries/_form.html.haml (14.2ms)
+Rendered layouts/_tabs.html.haml (6.3ms)
+Rendered enquiries/new.html.haml within layouts/application (155.9ms)
+Completed 200 OK in 251ms (Views: 161.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:25:19 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Tue Aug 02 17:25:27 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"mwtDXQYpZggPnB0QmEK+vFhBxqi3uLgW2GPPeMDLDEk=", "utf8"=>"\342\234\223", "enquiry"=>{"phone"=>"", "content"=>"ffdsa", "email"=>"julines.liong@sydney.edu.au"}}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  describe `enquiries`
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `enquiries` (`content`, `email`, `phone`, `updated_at`, `created_at`) VALUES ('ffdsa', 'julines.liong@sydney.edu.au', '', '2011-08-02 07:25:27', '2011-08-02 07:25:27')[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT
+Rendered notifications/enquiry.text.haml (2.7ms)
+
+Sent mail to julines.liong@sydney.edu.au (30025ms)
+Date: Tue, 02 Aug 2011 17:25:27 +1000
+From: contact@wingmazeeducation.com
+To: julines.liong@sydney.edu.au
+Message-ID: <4e37a667dcf02_2f3839a65908689d@Macintosh-2.local.mail>
+Subject: [Wingmaze Education]  Thank you for your enquiry
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Madam,
+Thank you for your query regarding Wingmaze Education.  This is an automated reply from Wingmaze Education.
+Please allow 1-2 working days for a reply to your query.
+Information about our education services may be found at: http://www.wingmazeeduction.com
+Kind regards,
+Wingmaze Education
+Wingmaze Education
+2/2 McFarlane Street
+Merrylands
+NSW 2160
+E-mail: contact@wingmazeeducation.com
+Redirected to http://localhost:3000/enquiries/2
+Completed 302 Found in 30082ms
+
+
+Started GET "/enquiries/2" for 127.0.0.1 at Tue Aug 02 17:25:57 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEnquiry Load (0.3ms)[0m  [1mSELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 2 LIMIT 1[0m
+Rendered layouts/_tabs.html.haml (6.6ms)
+Rendered enquiries/show.html.haml within layouts/application (151.6ms)
+Completed 200 OK in 174ms (Views: 162.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:25:58 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 17:29:09 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (6.3ms)
+Rendered welcome/index.html.haml within layouts/application (33.0ms)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:29:09 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 17:34:27 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (13.5ms)
+Rendered layouts/_tabs.html.haml (10.2ms)
+Rendered enquiries/new.html.haml within layouts/application (161.9ms)
+Completed 200 OK in 179ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:34:27 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/%5C" for 127.0.0.1 at Tue Aug 02 17:38:03 +1000 2011
+
+ActionController::RoutingError (No route matches "/%5C"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 02 17:38:06 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (114.5ms)
+Rendered welcome/index.html.haml within layouts/application (140.4ms)
+Completed 200 OK in 148ms (Views: 147.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:38:06 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Tue Aug 02 17:41:52 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (12.8ms)
+Rendered layouts/_tabs.html.haml (6.3ms)
+Rendered enquiries/new.html.haml within layouts/application (42.0ms)
+Completed 200 OK in 58ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Tue Aug 02 17:41:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/julines/freelance/wingmaze/config/environment.rb:5)
+
+
+Started GET "/welcome" for 127.0.0.1 at Wed Aug 10 23:04:24 +1000 2011
+
+ActionController::RoutingError (No route matches "/welcome"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at Wed Aug 10 23:04:30 +1000 2011
+  Processing by WelcomeController#index as HTML
+Rendered layouts/_tabs.html.haml (11.3ms)
+Rendered welcome/index.html.haml within layouts/application (142.7ms)
+Completed 200 OK in 152ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Wed Aug 10 23:04:30 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Wed Aug 10 23:04:38 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (15.7ms)
+Rendered layouts/_tabs.html.haml (116.7ms)
+Rendered enquiries/new.html.haml within layouts/application (157.6ms)
+Completed 200 OK in 209ms (Views: 165.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Wed Aug 10 23:04:38 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Wed Aug 10 23:04:48 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"62bqqd3bzDH02OtE/3+9o2XEI1jQRyOxBt+6AvzOhIg=", "utf8"=>"\342\234\223", "enquiry"=>{"phone"=>"", "content"=>"testing", "email"=>"julines@gmail.com"}}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.5ms)[0m  [1mdescribe `enquiries`[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO `enquiries` (`email`, `content`, `phone`, `updated_at`, `created_at`) VALUES ('julines@gmail.com', 'testing', '', '2011-08-10 13:04:48', '2011-08-10 13:04:48')
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+Rendered notifications/enquiry.text.haml (2.5ms)
+
+Sent mail to julines@gmail.com (1099ms)
+Date: Wed, 10 Aug 2011 23:04:48 +1000
+From: contact@wingmazeeducation.com
+To: julines@gmail.com
+Message-ID: <4e4281f0a4681_791a86b55078492c3@192-168-1-9.tpgi.com.au.mail>
+Subject: [Wingmaze Education]  Thank you for your enquiry
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Madam,
+Thank you for your query regarding Wingmaze Education.  This is an automated reply from Wingmaze Education.
+Please allow 1-2 working days for a reply to your query.
+Information about our education services may be found at: http://www.wingmazeeduction.com
+Kind regards,
+Wingmaze Education
+Wingmaze Education
+2/2 McFarlane Street
+Merrylands
+NSW 2160
+E-mail: contact@wingmazeeducation.com
+Redirected to http://localhost:3000/enquiries/3
+Completed 302 Found in 1375ms
+
+
+Started GET "/enquiries/3" for 127.0.0.1 at Wed Aug 10 23:04:49 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mEnquiry Load (0.9ms)[0m  SELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 3 LIMIT 1
+Rendered layouts/_tabs.html.haml (6.6ms)
+Rendered enquiries/show.html.haml within layouts/application (36.3ms)
+Completed 200 OK in 169ms (Views: 43.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Wed Aug 10 23:04:49 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/julines/freelance/wingmaze/config/environment.rb:5)
+
+
+Started GET "/enquiries/new" for 127.0.0.1 at Wed Aug 10 23:09:10 +1000 2011
+  Processing by EnquiriesController#new as HTML
+Rendered enquiries/_form.html.haml (117.1ms)
+Rendered layouts/_tabs.html.haml (8.0ms)
+Rendered enquiries/new.html.haml within layouts/application (154.8ms)
+Completed 200 OK in 172ms (Views: 162.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Wed Aug 10 23:09:11 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/enquiries" for 127.0.0.1 at Wed Aug 10 23:09:17 +1000 2011
+  Processing by EnquiriesController#create as HTML
+  Parameters: {"commit"=>"Submit enquiry", "authenticity_token"=>"62bqqd3bzDH02OtE/3+9o2XEI1jQRyOxBt+6AvzOhIg=", "utf8"=>"\342\234\223", "enquiry"=>{"phone"=>"", "content"=>"test", "email"=>"julines@gmail.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.7ms)[0m  [1mdescribe `enquiries`[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO `enquiries` (`phone`, `content`, `updated_at`, `email`, `created_at`) VALUES ('', 'test', '2011-08-10 13:09:17', 'julines@gmail.com', '2011-08-10 13:09:17')
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+Rendered notifications/enquiry.text.haml (2.6ms)
+
+Sent mail to julines@gmail.com (214ms)
+Date: Wed, 10 Aug 2011 23:09:17 +1000
+From: contact@wingmazeeducation.com
+To: julines@gmail.com
+Message-ID: <4e4282fd49cf9_7a92827a53007217@192-168-1-9.tpgi.com.au.mail>
+Subject: [Wingmaze Education]  Thank you for your enquiry
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Madam,
+Thank you for your query regarding Wingmaze Education.  This is an automated reply from Wingmaze Education.
+Please allow 1-2 working days for a reply to your query.
+Information about our education services may be found at: http://www.wingmazeeduction.com
+Kind regards,
+Wingmaze Education
+Wingmaze Education
+2/2 McFarlane Street
+Merrylands
+NSW 2160
+E-mail: contact@wingmazeeducation.com
+Redirected to http://localhost:3000/enquiries/4
+Completed 302 Found in 427ms
+
+
+Started GET "/enquiries/4" for 127.0.0.1 at Wed Aug 10 23:09:17 +1000 2011
+  Processing by EnquiriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mEnquiry Load (0.5ms)[0m  SELECT `enquiries`.* FROM `enquiries` WHERE `enquiries`.`id` = 4 LIMIT 1
+Rendered layouts/_tabs.html.haml (8.8ms)
+Rendered enquiries/show.html.haml within layouts/application (41.4ms)
+Completed 200 OK in 60ms (Views: 48.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stylesheets/graphs.css" for 127.0.0.1 at Wed Aug 10 23:09:17 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/graphs.css"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.9ms)

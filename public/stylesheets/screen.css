@@ -1,0 +1,275 @@
+@import "default.css";
+
+p.error, div.error { border:1px solid #CE1126; background: #FFE1E1; margin-top:0.2em; margin-bottom:0.2em; padding:0.5em; font-size:1.3em; font-weight:bold; font-color:#CE1126; color:#CE1126; width: 95%}
+p.notice, div.notice { border:1px solid #4D9A16; background:#f1f1f1; margin:0.2em; margin-bottom:0.2em; padding:0.5em; font-size:1.3em; font-weight:bold; font-color:#4D9A16; color:#4D9A16; width: 95%}
+p#forgot-password { padding-top: 1em;}
+.space {line-height:1.4em; margin:0.8em 0; clear:both; }
+/*div.leftDiv{float:left;height:100%;width:50%; }
+div.rightDiv {float:left;height:100%;width:50%; }*/
+
+.Page {margin:0 auto;padding:0;margin-top:0px;margin-left:auto;margin-right:auto;text-align:center;width:1024px;height:auto; border-left:1px solid #e2e2e2; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2;}
+/* ##### Header ##### */
+.Header {width:1024px; background:url(../images/bg.png) repeat left top; height:141px;}
+.Header h1 {font-family:Helvetica,Arial,sans-serif;text-align:right; color:#fff; font-size:3em; font-weight:normal;position:absolute;right:330px;top:30px;letter-spacing:-1px;text-transform:uppercase;}
+/*.Header h2 {text-align:left; color:#fff; font-size:2.4em;  padding-left:179px; padding-top:0.2em;}*/
+.Header h2 {font-family:Helvetica,Arial,sans-serif; font-size:3em;letter-spacing:-1px;position:absolute;right:330px;top:80px;color:#fff;font-weight:normal;font-style:italic;}
+.Header #logo {left:330px;top:15px;position:absolute;}
+/*.Header .logo-header {min-height: 10em;display: table-cell;vertical-align: middle}*/
+.Header .login {line-height:1.4em; font-size:1.1em; text-align:right; padding-right:18px; color:#fff; margin-top:12px;}
+.Header .login a{color:#fff; text-decoration:none;}
+.Header .login a:hover{color:#fff; text-decoration:underline;}
+
+/* #### Navigation */
+.Navigation {height:40px; background-color:#5599f7; width:auto;}
+.Navigation .Navi_Container {height:32px;font-size:1.2em; margin-left:1.6em; float:left; margin-top:7px;  }
+.Navigation .Navi_Container  ul.Tab_menu {}
+.Navigation .Navi_Container  ul.Tab_menu li {color:#333; padding:0; font-size:1em; text-transform:uppercase; list-style:none; line-height:32px; display:inline;}
+.Navigation .Navi_Container  ul.Tab_menu li a {border-left:1px solid #fff;border-right:1px solid #fff;border-top:1px solid #fff;color:#333; padding:0 0.6em; font-size:0.9em; text-transform:uppercase; background-color:#c4dcfd; text-decoration:none; display:inline-block;}
+.Navigation .Navi_Container  ul.Tab_menu li a:hover {border-left:1px solid #fff;border-right:1px solid #fff;border-top:1px solid #fff;color:#333; padding:0 0.6em; font-size:0.9em; text-transform:uppercase; background-color:#F9CF66; text-decoration:none; display:inline-block; background-color:#Fdf6c5; text-decoration:none;}
+.Navigation .Navi_Container  ul.Tab_menu li.active a{border-left:1px solid #fff;border-right:1px solid #fff;border-top:1px solid #fff;color:#333; padding:0 0.6em; font-size:0.9em; text-transform:uppercase; background-color:#F9CF66; text-decoration:none; display:inline-block; background-color:#fff; text-decoration:none;}
+
+
+/* ### Search */
+#Search {background-color:#fdfcde; height:auto; margin:0 2em 1.6em 0; text-align:center; margin:1em; padding-bottom:2em;}
+#Search form, table, p, h2 {text-align:center;}
+#Search form fieldset{}
+#Search h2{font-size:1.5em; color:#333; padding:1.5em 0 1em 1.5em;}
+#Search .keyword { margin-left:1em;  font-size:1.2em; display:inline;}
+#Search input[type="text"] {width:20em; padding:0 0 0 0.2em; height:1.6em;}
+#Search input.reset {font-size: 1.1em;color: #fff;height:1.727em;background:#ce1126;padding-left:0.4em;padding-right:0.4em;text-transform: uppercase;border: none;height:28px;text-align:center;}
+#Search input.reset:hover {background-color: #d53447;text-decoration: underline;}
+#Search input.submit {font-size: 1em;color: #fff;height:1.727em;background:#12416c;padding-left:0.4em;padding-right: 0.4em;text-transform:uppercase;border:none;height:28px;text-align: center; display:inline; cursor:pointer;}
+#Search input.submit:hover {background-color:#355d82;text-decoration:underline;}
+
+/* ### button style */
+#button {clear:both; margin:1em; text-align:left;}
+#button form input.reset {font-size: 1em;color: #fff;height:1.727em;background:#ce1126;padding-left:0.4em;padding-right:0.4em;text-transform: uppercase;border: none;height:28px;text-align:center; cursor:pointer; width:auto;}
+#button form input.reset:hover {background-color: #d53447;text-decoration: underline; cursor:pointer;}
+#button form input.submit {font-size: 1em;color: #fff;height:1.727em;background:#5599F7;padding-left:0.4em;padding-right:0.4em;text-transform:uppercase;border:none;height:28px;text-align: center; cursor:pointer; width:auto;}
+#button form input.submit:hover {background-color:#355d82;text-decoration:underline; cursor:pointer;}
+#button .text-area {width:450px;height:200px;}
+
+/* ### button style for multiple buttons in a table */
+#buttonList {clear:both; margin:1em; text-align:left;}
+#buttonList form input.reset {font-size: 1em;color: #fff;height:1.727em;background:#ce1126;padding-left:0.4em;padding-right:0.4em;text-transform: uppercase;border: none;height:28px;text-align:center; cursor:pointer; width:100%;}
+#buttonList form input.reset:hover {background-color: #d53447;text-decoration: underline; cursor:pointer;}
+#buttonList form input.submit {font-size: 1em;color: #fff;height:1.727em;background:#12416c;padding-left:0.4em;padding-right:0.4em;text-transform:uppercase;border:none;height:28px;text-align: center; cursor:pointer; width:100%;}
+#buttonList form input.submit:hover {background-color:#355d82;text-decoration:underline; cursor:pointer;}
+
+/* ### button style inside form */
+#button-inside-form {clear:both; margin-left:22.6em; text-align:left;}
+#button-inside-form form input.reset {font-size: 1em;color: #fff;height:1.727em;background:#ce1126;padding-left:0.4em;padding-right:0.4em;text-transform: uppercase;border: none;height:28px;text-align:center; cursor:pointer;}
+#button-inside-form form input.reset:hover {background-color: #d53447;text-decoration: underline; cursor:pointer;}
+#button-inside-form form input.submit {font-size: 1em;color: #fff;height:1.727em;background:#12416c;padding-left:0.4em;padding-right:0.4em;text-transform:uppercase;border:none;height:28px;text-align: center;  cursor:pointer;}
+#button-inside-form form input.submit:hover {background-color:#355d82;text-decoration:underline; cursor:pointer;}
+
+/* ### table style for bigForm (used in reponses show) ### */
+.form-style#bigform table {width:100%;}
+.form-style#bigform table tr th {background-color:#fae0a9; font-weight:bold; border-right:1px solid #dbd3c2; border-bottom:3px solid #4d483c; padding:0.8em; text-align:left;line-height:0.9em;}
+.form-style#bigform table th.answers {padding:0.8em; width:50px;}
+.form-style#bigform table td.answers {padding:0.8em; width:50px; text-align:center;}
+.form-style#bigform table th.question {width:50%;border-left:#D8D8D8 solid 1px; }
+.form-style#bigform table td.question {width:50%;padding:0.8em; border-left:#D8D8D8 solid 1px; line-height: 1.4em; }
+/*.form-style#bigform input[type=radio] {width:1em;} */
+
+/* ### form style */
+.form-style {text-align:left; float:left; margin:1em; width:auto; }
+/*.form-style#bigform {width:852px;}*/
+.form-style h1 {color:#ce1126; font-size:2.1em; border-bottom:#D8D8D8 solid 1px;}
+.form-style p {font-size:1.2em; text-align:left; color:#555555;}
+.form-style p a{color:#0066ad; text-decoration:underline; }
+.form-style p a:hover{color:#0066ad; text-decoration:none;}
+.form-style p.list a{color:#0066ad; text-decoration:underline;  text-align:right; padding:0.5em 0; float:right;}
+.form-style p.list a:hover{color:#0066ad; text-decoration:none; text-align:right;  padding:0.5em 0; float:right;}
+.form-style .line {border-top:1px solid #e2e2e2; line-height:1.4em; margin:0.5em 0; clear:both; }
+.form-style .mandatory {color:#F00; font-size:1em; padding:0.4em 0;}
+.form-style form label {font-size:1.2em;color:#555555; font-weight:bold; padding:0.8em 0 0.2em 0;}
+/*.form-style form label.inline {display:inline;}*/
+.form-style form .inline {display:inline;}
+.form-style form em{color:#ce1126; font-weight:bold;font-size:1.1em;}
+.form-style form label span {font-size:1em; font-weight:normal;}
+.form-style form input.radio-button{width:1em;}
+.form-style form input {width:19em; padding-left:0.4em; height:1.6em;}
+/*.form-style form select { height:1.6em; font-size:1.2em; color:#555; padding-right:0.2em; padding-left:0.2em; }*/
+.form-style form select { height:auto; font-size:1.2em; color:#555; padding-right:0.2em; padding-left:0.2em; }
+.form-style form select option{ padding-right:0.2em; padding-left:0.2em; }
+.form-style form ul li{list-style:none; line-height:2.2em;}
+/*.form-style form ul.bunch li {list-style:none; line-height:1.1em; display:inline;}*/
+
+.form-style #left  {float:left; height:inherit; width:50%; background-color: #BFE3FE;}
+.form-style #right {float:left; height:inherit; width:50%; background-color: #FEFFBF;}
+.form-style #left  label {display:inline;}
+.form-style #right label {display:inline;}
+.form-style #left  select { height:auto; }
+.form-style #right select { height:auto; }
+.form-style #left  input {width:10em}
+.form-style #right input {width:10em}
+.form-style table tr {line-height: 2.9em;}
+
+/* From Form Builder */
+.form-style form.formbuilder legend { font-style: normal; text-transform: none; font-weight: bold; padding-left: 1em; padding-bottom: 1em; padding-right: 1em; padding-top: 0.6em; font-size: 1.5em; clear: left; margin: 0 0 0 -0.65em; background: #fdfcde; }
+.form-style form.formbuilder label { width: 11em; display: inline-block; vertical-align: top; text-align: right; font-weight: bold; }
+.form-style form.formbuilder fieldset { background-color: #fdfcde; position: relative; padding: 0 1em 1em 1em; }
+.form-style form.formbuilder fieldset ol { margin: 1em 0 0 0; padding: 0; }
+.form-style form.formbuilder fieldset li { list-style: none; padding: 0.5em 0.5em 1em 0.5em; margin: 0; }
+.form-style form.formbuilder fieldset li.error { border-color: #ce1126; border-width: 2px 0 1px 0; color: #ce1126; border-style: solid;  }
+.form-style form.formbuilder fieldset fieldset { border: none; margin: 0.3em 0 0; padding-left: 0; background: none; }
+.form-style form.formbuilder fieldset fieldset legend { background: none; padding: 0 0 0.5em; margin: 0; border: 0; font-size: 1em; font-weight: bold; }
+.form-style form.formbuilder fieldset fieldset label { display: block; width: auto; font-weight: normal; text-align: left; margin-left: 12em;}
+.form-style form.formbuilder em, #content .required-warning em { font-weight: bold; font-style: normal; color: #f00; }
+.form-style form.formbuilder .user-agreement label { width: auto; font-weight: normal; margin: -1.6em 0 0 3em; line-height: 1.5; text-align: left; }
+.form-style form.formbuilder textarea { width: 25em; font-size: 1em; }
+.form-style form.formbuilder .buttons { text-align: right; margin-top: 1em; }
+.form-style form.formbuilder .buttons input { margin-left: 2em; }
+.form-style form.formbuilder h2 { color: #384856; margin: 0.8em 0; font-size: 1.6em; }
+.form-style form.formbuilder p { margin: 1em 0; }
+.form-style form.formbuilder p.error-text { color: #ce1126; background: transparent url(../../images/common/icon_error.gif) no-repeat left 0.167em; border-bottom: 0.083em solid #ce1126; padding-bottom: 0.5em; padding-left: 1.7em; }
+.form-style form.formbuilder p.leader-text { padding-top: 1em; margin-top: 0; }
+.form-style form.formbuilder li p { font-size: 1em; margin: 0; }
+.form-style form.formbuilder .hidden {height: 1px; left: -9999em; overflow: hidden; position: absolute; top: 0px; width: 1px;}
+.form-style form.formbuilder input[type=text] { width: 18em; }
+.form-style form.formbuilder select { width: 17.3em; }
+
+.form-style form.formbuilder .buttons input.button { margin: 0 0 0 1em; }
+.form-style form.formbuilder input.button { height: auto; border: 0; color: #ffffff; padding: 0.5em 0.75em; cursor: pointer; margin: 0; }
+.form-style form.formbuilder input.button.clear-button { background: #ce1126; }
+.form-style form.formbuilder input.button.submit-button { background: #12416c; }
+.form-style form.formbuilder input.button:hover { background: #355d82; text-decoration: underline; }
+.form-style form.formbuilder input.button.clear-button:hover { background-color: #d53447; }
+.form-style form.formbuilder input.button:active {  }
+.form-style form.formbuilder #patient_initial { size:2 ;}
+
+.form-style table.display-table {font-size: 1.2em;}
+.form-style table th {padding-right:0.5em; text-align:right; font-weight:bold;}
+.form-style table td {padding-left:0.5em; text-align: left; }
+
+/* Generic table-based form */
+.questionnaire-form form table {width:100%;text-align:left;}
+.questionnaire-form form table tr th {background-color:#fae0a9; font-weight:bold; padding:0.8em; text-align:left;line-height:0.9em;}
+.questionnaire-form form table th.answers {padding:0.8em; width:50px;}
+.questionnaire-form form table td.answers {padding:0.8em; width:50px; text-align:center;}
+.questionnaire-form form table th.question {width:50%;border-left:#D8D8D8 solid 1px; }
+.questionnaire-form form table td.question {width:50%;padding:0.8em; border-left:#D8D8D8 solid 1px; line-height: 1.4em;  }
+.questionnaire-form form input[type=radio] {width:1em;}
+
+/* Questionnaire Styles */
+.questionnaire-form form table {width:100%;}
+.questionnaire-form form table tr th {background-color:#fae0a9; font-weight:bold; border-right:1px solid #dbd3c2; border-bottom:3px solid #4d483c; padding:0.8em; text-align:left;line-height:0.9em;}
+.questionnaire-form form table th.answers {padding:0.8em; width:50px;}
+.questionnaire-form form table td.answers {padding:0.8em; width:50px; text-align:center;}
+.questionnaire-form form table th.question {width:55%;border-left:#D8D8D8 solid 1px; }
+.questionnaire-form form table td.question {width:55%;padding:0.8em; border-left:#D8D8D8 solid 1px; line-height: 1.4em; }
+.questionnaire-form form input[type=radio] {width:1em;}
+
+
+
+/* ##### Content & breadcrumb ##### */
+.Content_Container {height:auto; clear:both; }
+.Content_Container .Contents {float:left; margin:1.6em; width:600px;}
+.Content_Container .Contents p {text-align: left; margin: 0.5em auto;}
+.Content_Container .Contents h2 {text-align: left; font-size:1.5em; margin: 0.5em auto;}
+.Content_Container .table_style { margin-left:0;  text-align:left;width:100%;}
+.Content_Container .table_style table {font-size:1.1em;border:1px solid #dbd3c2; padding:0; margin:0; color:#333; width:100%;}
+.Content_Container .table_style table th {background-color:#fae0a9; font-weight:bold; border-right:1px solid #dbd3c2; border-bottom:3px solid #4d483c; padding:0.8em; text-align:left;}
+.Content_Container .table_style table td {padding:0.8em; border-right:1px solid #dbd3c2; border-bottom:1px solid #dbd3c2; text-align: left;}
+.Content_Container .table_style table td a{color:#0066ad; text-decoration:underline;}
+.Content_Container .table_style table td a:hover{color:#0066ad; text-decoration:none}
+.Content_Container .table_style p {font-size:1.2em;}
+
+.Content_Container .table_style table.no-border,
+.Content_Container .table_style table.no-border td {
+    border: none;
+    padding: 0em;    
+    width: 100%;
+}
+
+.Content_Container .table_style table.no-border-button,
+.Content_Container .table_style table.no-border-button td {
+    border: none;
+    padding: 0em;    
+    width: auto;
+}
+
+#search {
+    padding: 0em;    
+    width: 100%;
+    text-align: center;
+}
+
+.table_style {text-align:left; float:left; margin:1.6em; }
+.table_style .line {border-top:1px solid #e2e2e2; line-height:1.4em; margin:0.5em 0; clear:both; }
+.table_style ul.list li {list-style:none; line-height:2.2em;}
+.table_style ul.list li.small {list-style:none; line-height:1.1em;}
+.table_style h1 {color:#ce1126; font-size:2.1em; border-bottom:#D8D8D8 solid 1px;}
+/*.table_style p{text-align:left; color:#555555;}*/
+.table_style p{text-align:left;}
+.table_style table {font-size:1.1em;border:1px solid #dbd3c2; padding:0; margin:0; color:#333;}
+.table_style table th {background-color:#fae0a9; font-weight:bold; border-right:1px solid #dbd3c2; border-bottom:3px solid #4d483c; padding:0.8em; text-align:left;}
+.table_style table td {padding:0.8em; border-right:1px solid #dbd3c2; border-bottom:1px solid #dbd3c2;}
+.table_style table td a{color:#0066ad; text-decoration:underline;}
+.table_style table td a:hover{color:#0066ad; text-decoration:none;}
+ 
+/* #### Left Navigation */
+#menu {float:left; width:18em; margin:1.6em; text-align:left;}
+#menu ul li {list-style:none;}
+#menu ul li h2 {color:#CE1126;font-weight:600;letter-spacing:normal;text-transform:uppercase; font-size:1.5em; padding-bottom:0.32em; border-bottom:#D8D8D8 1px solid;}
+#menu ul li a {background:url(../image/list-item-red-caret.gif) no-repeat scroll 0.45em 0.73em transparent;color:#333333;display:block;font-size:1.2em;font-weight:normal;margin:0;padding:0.46em 0 0.46em 1.82em; text-decoration:none; border-bottom:#D8D8D8 1px solid;}
+#menu ul li a:hover {background-color:#fafafa; color:#125687; text-decoration:underline;}
+#menu .active a {font-weight:bold; background-color:#fafafa; color:#333333;}
+#menu dl dt {color:#CE1126;font-weight:600;letter-spacing:normal;text-transform:uppercase; font-size:1.5em; padding-bottom:0.32em; border-bottom:#D8D8D8 1px solid;}
+
+/* #### Patient view style #### */
+.Contents h1 {color:#CE1126;font-size:2.1em; font-weight:normal; text-transform:uppercase;}
+.Contents .user-agreement{width: 800px; height: 400px; overflow: auto; border-style:solid; border-width:1px; padding: 5px;}
+.Contents .user-agreement h1 {color:#CE1126; font-size:2em; font-weight:normal; text-transform:uppercase; text-align:left;}
+.Contents .user-agreement h2 {color:#365F91; font-size:1.5em; font-weight:normal; text-transform:uppercase;text-align:left;}
+.Contents form.patient{text-align:left; width:822px;}
+.Contents form.patient table {border-collapse:collapse;border-color:#DBD3C2 #DBD3C2 #4D483C;border-spacing:0;border-style:solid;border-width:1px;font-size:0.9em;margin:1em 0;}
+.Contents form.patient table td label {text-align:left; font-size:1.1em;}
+.Contents form.patient table td, .Contents form.patient table th {background:none repeat scroll 0 0 transparent;border:1px solid #DBD3C2;font-size:1.2em;margin:0;padding:0.6em; text-align:left;}
+.Contents form.patient h2{color:#CE1126;font-size:1.8em; font-weight:normal; text-transform:normal;padding-top:1em;}
+.Contents form.patient hr {background-color:#DBD3C2;border:0 none;clear:both;display:block;height:1px;margin:0.5em 0;}
+.Contents form.patient div.leftDiv{float:left;height:100%;width:50%;}
+.Contents form.patient div.leftDiv h3{color:#CE1126;font-size:1.4em;font-weight:bold;margin:2em 0 0;}
+.Contents form.patient div.leftDiv p{font-size:1.1em; color:#333; text-align:left;}
+.Contents form.patient div.leftDiv div.diff_base {font-size:1.3em;font-weight:bold; text-align:left;}
+.Contents form.patient div.leftDiv div.diff_prev {font-size:1.3em;font-weight:bold; text-align:left;}
+.Contents form.patient div.leftDiv div.NegVal {color:#FB0000;}
+.Contents form.patient div.leftDiv div.PosVal{color:#006400;}
+.Contents form.patient div.leftDiv div.chart{border:2px solid black;height:200px;width:350px;}
+.Contents form.patient div.leftDiv h3{color:#CE1126;font-size:1.4em;font-weight:bold;margin:2em 0 0;}
+.Contents form.patient div.leftDiv table th{background:none repeat scroll 0 0 #FAE0A9;border-color:#DBD3C2 ;border-style:solid;border-width:1px;font-weight:bold;vertical-align:middle;padding:0.4em;margin:0;}
+.Contents form.patient div.leftDiv table th label{font-size:1.1em; color:#333;}
+.Contents form.patient div.leftDiv table td{background:none repeat scroll 0 0 transparent;border:1px solid #DBD3C2;font-size:1.2em;margin:0;padding:0.4em;}
+.Contents form.patient div.leftDiv table td input{font-size:1.2em;}
+.Contents form.patient div.rightDiv{float:right;height:100%;width:50%;}
+.Contents form.patient div.rightDiv h3{color:#CE1126;font-size:1.4em;font-weight:bold;margin:2em 0 0;}
+.Contents form.patient div.rightDiv p{font-size:1.1em; color:#333; text-align:left;}
+.Contents form.patient div.rightDiv div.diff_base {font-size:1.3em;font-weight:bold; text-align:left;}
+.Contents form.patient div.rightDiv div.diff_prev {font-size:1.3em;font-weight:bold; text-align:left;}
+.Contents form.patient div.rightDiv div.NegVal {color:#FB0000;}
+.Contents form.patient div.rightDiv div.PosVal{color:#006400;}
+.Contents form.patient div.rightDiv div.chart{border:2px solid black;height:200px;width:350px;}
+.Contents form.patient div.rightDiv h3{color:#CE1126;font-size:1.4em;font-weight:bold;margin:2em 0 0;}
+.Contents form.patient div.rightDiv table th{background:none repeat scroll 0 0 #FAE0A9;border-color:#DBD3C2 ;border-style:solid;border-width:1px;font-weight:bold;vertical-align:middle;padding:0.4em;margin:0;}
+.Contents form.patient div.rightDiv table th label{font-size:1.1em; color:#333;}
+.Contents form.patient div.rightDiv table td{background:none repeat scroll 0 0 transparent;border:1px solid #DBD3C2;font-size:1.2em;margin:0;padding:0.4em;}
+.Contents form.patient div.rightDiv table td input{font-size:1.2em;}
+.Contents form.patient input.submit {font-size: 1em;color: #fff;height:1.727em;background:#12416c;padding-left:0.4em;padding-right:0.4em;text-transform:uppercase;border:none;height:28px;text-align: center; cursor:pointer; width:auto;}
+.Contents form.patient input.submit:hover {background-color:#355d82;text-decoration:underline; cursor:pointer;}
+.Contents form.patient input.finalise {font-size: 1em;color: #fff;height:1.727em;background:#ce1126;padding-left:0.4em;padding-right:0.4em;text-transform: uppercase;border: none;height:28px;text-align:center; cursor:pointer; width:auto;}
+.Contents form.patient input.finalise:hover {background-color: #d53447;text-decoration: underline; cursor:pointer;}
+.Contents form.patient p#submit_buttons {padding-top:1em;}
+
+#results {font-size: 1.5em;}
+
+/* ##### Visit Style ##### */
+.Contents div#show_visit{text-align:left; width:822px;}
+.Contents div#show_visit h2 {color:#CE1126;font-size:1.8em; font-weight:normal; text-transform:normal;padding-top:1em;}
+.Contents div#left{float:left;height:100%;width:50%;}
+.Contents div#right{float:right;height:100%;width:50%;}
+
+/* ##### Footer area ##### */
+.Footer_Container {height:40px; background-color:#12416c; clear:both; line-height:40px; border-top:5px solid #d8d8d8; color:#fff; margin-top:3em;}
+
+.Footer_Copyright {font-size:1.1em; text-align:left; padding-left:1.6em;}
