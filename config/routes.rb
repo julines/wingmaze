@@ -2,6 +2,13 @@ Wingmaze::Application.routes.draw do
   get "welcome/index"
 
   resources :enquiries
+  
+  match "/about" => "welcome#about", :as => "about"
+  match "/methods" => "welcome#methods", :as => "methods"
+  match "/prices" => "welcome#prices", :as => "prices"
+  match "/location" => "welcome#location", :as => "location"
+  match "/careers" => "welcome#careers", :as => "careers"
+  match "/contact" => "welcome#contact", :as => "contact"
 
   root :to => "welcome#index"
   # The priority is based upon order of creation:

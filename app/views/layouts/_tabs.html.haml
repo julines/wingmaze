@@ -1,8 +1,8 @@
-%li{:class => (@active_tab == "About Us" ? 'active' : '')}= link_to "About Us", "http://wingmazeeducation.com/about/index.html"
-%li{:class => (@active_tab == "Our Methods" ? 'active' : '')}= link_to "Our Methods", "http://wingmazeeducation.com/methods/index.html"
-%li{:class => (@active_tab == "Prices" ? 'active' : '')}= link_to "Prices", "http://wingmazeeducation.com/prices/index.html"
-%li{:class => (@active_tab == "Location" ? 'active' : '')}= link_to "Location", "http://wingmazeeducation.com/location/index.html"
-%li{:class => (@active_tab == "Careers" ? 'active' : '')}= link_to "Careers", "http://wingmazeeducation.com/careers/index.html"
-%li{:class => (@active_tab == "Contact" ? 'active' : '')}= link_to "Contact", "http://wingmazeeducation.com/contact/index.html"
+%li{:class => (@active_tab == "About Us" ? 'active' : '')}= link_to "About Us", about_path
+%li{:class => (@active_tab == "Our Methods" ? 'active' : '')}= link_to "Our Methods", methods_path
+%li{:class => (@active_tab == "Prices" ? 'active' : '')}= link_to "Prices", prices_path
+%li{:class => (@active_tab == "Location" ? 'active' : '')}= link_to "Location", location_path
+%li{:class => (@active_tab == "Careers" ? 'active' : '')}= link_to "Careers", careers_path
+%li{:class => (@active_tab == "Contact" ? 'active' : '')}= link_to "Contact", contact_path
 %li{:class => (@active_tab == "Enquiry" ? 'active' : '')}= link_to "Enquiry", new_enquiry_path
 
