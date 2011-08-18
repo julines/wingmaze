@@ -17,10 +17,12 @@ set :user, 'julines'
 
 # set :domain, 'wingmaze'
 
-set :domain, 'julinesliong.com'
+# set :domain, 'julinesliong.com'
+set :domain, 'moroni.dreamhost.com'
 set :application, "wingmaze"
 set :repository,  "git@github.com:julines/wingmaze.git"
 set :scm, :git
+set :scm_passphrase, "gideon277"
 set :stages, %w(development uat production)
 # set :branch, 'master'
 set :git_shallow_clone, 1
