@@ -69,7 +69,7 @@ GEM
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
       net-ssh (>= 2.0.9)
-    net-ssh (2.1.4)
+    net-ssh (2.2.1)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     polyglot (0.3.2)
@@ -94,7 +94,7 @@ GEM
       thor (~> 0.14.4)
     rake (0.9.2)
     rbx-require-relative (0.0.5)
-    rdoc (3.9.2)
+    rdoc (3.9.4)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
       ruby-debug-base (~> 0.10.4.0)
@@ -116,7 +116,7 @@ DEPENDENCIES
   haml-rails
   mongrel
   mysql2 (~> 0.2.6)
-  rack (~> 1.2.3)
+  rack (= 1.2.3)
   rails (= 3.0.9)
   ruby-debug
   rvm
