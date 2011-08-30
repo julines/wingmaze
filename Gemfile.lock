@@ -116,6 +116,7 @@ DEPENDENCIES
   haml-rails
   mongrel
   mysql2 (~> 0.2.6)
+  rack (>= 1.2.3)
   rails (= 3.0.9)
   ruby-debug
   rvm
