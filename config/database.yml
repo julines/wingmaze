@@ -19,7 +19,7 @@ staging:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  host: mysql.julinesliong.com
+  host: wingmaze-db.julinesliong.com
   database: wingmaze_development
   pool: 5
   username: wingmaze
