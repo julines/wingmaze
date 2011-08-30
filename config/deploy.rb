@@ -11,7 +11,7 @@ set :repository, "git@github.com:julines/wingmaze.git"
 set :scm, :git
 set :stages, %w(staging uat production)
 set :default_stage, 'staging'
-set :rails_env, "#{stage}"
+set :rails_env, :staging
 set :branch, 'master'
 set :git_shallow_clone, 1
 set :deploy_via, :remote_cache
