@@ -11,14 +11,12 @@ set :repository, "git@github.com:julines/wingmaze.git"
 set :scm, :git
 set :stages, %w(staging uat production)
 set :default_stage, 'staging'
+set :rails_env, "#{stage}"
 set :branch, 'master'
 set :git_shallow_clone, 1
 set :deploy_via, :remote_cache
 set :copy_compression, :bz2
-set :rails_env, :development
 set :deploy_to, "/home/julines/#{application}"
-
-set(:rails_env) { "#{stage}" }
 
 role :web, "#{domain}"                          # Your HTTP server, Apache/etc
 role :app, "#{domain}"                          # This may be the same as your `Web` server
@@ -28,7 +26,7 @@ task :staging do
   role :app, "#{domain}"
   role :web, "#{domain}"
   role :db,  "#{domain}", :primary => true
-  set :stage, :staging
+  set :stage, 'staging'
   set :branch, "master"
 end
 
@@ -36,7 +34,7 @@ task :uat do
   role :app, "#{domain}"
   role :web, "#{domain}"
   role :db, "#{domain}", :primary => true
-  set :stage, :uat
+  set :stage, 'uat'
   set :branch, "master"
 end
 
