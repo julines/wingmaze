@@ -8,7 +8,7 @@ gem 'rails', '3.0.9'
 gem 'mysql2', '~> 0.2.6'
 gem 'haml'
 gem 'haml-rails'
-gem 'rack', '>=1.2.3'
+gem 'rack', '~> 1.2.3'
 # Use unicorn as the web server
 # gem 'unicorn'
 
