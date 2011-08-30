@@ -5,7 +5,7 @@ ssh_options[:forward_agent] = true
 set :use_sudo, false
 set :user, 'julines'
 
-set :domain, "moroni.dreamhost.com"
+set :domain, "julinesliong.com"
 set :application, "wingmaze"
 set :repository, "git@github.com:julines/wingmaze.git"
 set :scm, :git
