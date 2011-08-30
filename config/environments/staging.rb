@@ -27,9 +27,18 @@ Wingmaze::Application.configure do
 
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
-      :address => 'smtp.usyd.edu.au',
-      :port    => 25,
-      :domain  => 'www.usyd.edu.au'
+    :enable_starttls_auto => true,
+    :address              => 'smtp.gmail.com',
+    :port                 => 587,
+    :domain               => 'julinesliong.com',
+    :authentication       => :plain,
+    :user_name            => 'julines@julinesliong.com',
+    :password             => 'gideon277'
   }
+  # ActionMailer::Base.smtp_settings = {
+  #     :address => 'smtp.usyd.edu.au',
+  #     :port    => 25,
+  #     :domain  => 'www.usyd.edu.au'
+  # }
 end
 
