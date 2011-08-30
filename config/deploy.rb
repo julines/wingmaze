@@ -20,7 +20,6 @@ set :deploy_to, "/home/julines/#{application}"
 
 set(:rails_env) { "#{stage}" }
 
-require 'capistrano/ext/multistage'
 require 'bundler/capistrano'
 
 # role :web, "#{application}"                          # Your HTTP server, Apache/etc
