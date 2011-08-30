@@ -20,8 +20,6 @@ set :deploy_to, "/home/julines/#{application}"
 
 set(:rails_env) { "#{stage}" }
 
-require 'bundler/capistrano'
-
 # role :web, "#{application}"                          # Your HTTP server, Apache/etc
 # role :app, "#{application}"                          # This may be the same as your `Web` server
 # role :db,  "#{application}", :primary => true        # This is where Rails migrations will run
