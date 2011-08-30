@@ -20,9 +20,9 @@ set :deploy_to, "/home/julines/#{application}"
 
 set(:rails_env) { "#{stage}" }
 
-# role :web, "#{application}"                          # Your HTTP server, Apache/etc
-# role :app, "#{application}"                          # This may be the same as your `Web` server
-# role :db,  "#{application}", :primary => true        # This is where Rails migrations will run
+role :web, "#{domain}"                          # Your HTTP server, Apache/etc
+role :app, "#{domain}"                          # This may be the same as your `Web` server
+role :db,  "#{domain}", :primary => true        # This is where Rails migrations will run
 
 task :staging do
   role :app, "#{domain}"
@@ -33,8 +33,8 @@ task :staging do
 end
 
 task :uat do
-  role :web, "#{domain}"
   role :app, "#{domain}"
+  role :web, "#{domain}"
   role :db, "#{domain}", :primary => true
   set :stage, :uat
   set :branch, "master"
@@ -43,8 +43,7 @@ end
 namespace :deploy do
   task :start do ; end
   task :stop do ; end
-  # task :restart, :roles => :app, :except => { :no_release => true } do
-  task :restart, :roles => :app do
+  task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
